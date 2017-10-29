@@ -30,7 +30,3 @@ end
 function add_to_trie(trie::Trie, phrase::String, metadata::Dict{String, String})
     return add_to_trie(trie, split(phrase, " "), metadata)
 end
-
-
-# TESTS
-add_to_trie(Trie(), "watch <genre> movies", Dict("action" => "BROWSE"))
